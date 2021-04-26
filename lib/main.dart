@@ -5,6 +5,7 @@ import 'package:shopuz/pages/home_page.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
+  
   MyApp({Key key}) : super(key: key);
 
   @override
