@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatefulWidget{
   HomePage({Key key}) : super(key: key);
 
   @override
@@ -60,6 +60,9 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
+
+      // -! Bottom Bar
+
     );
   }
 }
