@@ -18,7 +18,41 @@ class ItemCard extends StatelessWidget {
         color: Color(int.parse(product.color)),
 
       ),
-      child: Column(),
+      child: Column(
+        children: <Widget>[
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              GestureDetector(
+                onTap: (){
+                // -! navigation
+                
+                },
+                  child: Container(
+                  height: 160,
+                   decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(15.0),
+                    image: DecorationImage(
+                      image: NetworkImage(product.imgUrl),
+                      fit: BoxFit.cover
+                      ),
+                    
+                   ),
+                ),
+              ),
+              Container(
+                child: Text(
+                  '${product.title}',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                ),
+              )
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }
